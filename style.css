@@ -72,9 +72,30 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-around;
+    gap: 10vw;
+}
+.home-img{
+    width: 30vw;
+    display: flex;
+    justify-content:center;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--main-color);
+    /* box-shadow: 0 0 1rem var(--main-color);     */
 }
 .home-img img{
-    width: 35vw;
+    width: 33vw;
+    aspect-ratio: 1.1;
+    object-fit: contain;
+    
+    /* object-fit: cover;    */
+    /* border-radius: 50%; */
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 .home-content h3{
     font-size: 3.2rem;
@@ -127,6 +148,7 @@ span{
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+    width: 200px;
 }
 .btn:hover{
     box-shadow: none;
@@ -134,20 +156,38 @@ span{
 }
 
 .about{
-    display:  flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    width: 100vw;
+    max-height: 100vh;
+    
     background: var(--second-bg-color);
 
 }
+.about-container{
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+.about-img{
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    border-radius: 50%;
+    overflow: hidden;
+}
 .about-img img{
     width: 34vw;
+    aspect-ratio: 1.1;
+    object-fit:cover;
+    border-radius: 50%;
 }
 .heading{
     text-align: center;
     font-size: 4.5rem;
 
+}
+.about-content{
+    width: 50%;
 }
 .about-content h2{
     text-align: left;
@@ -159,6 +199,9 @@ span{
 .about-content p{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    text-align: justify;
+    line-height: 24px;
+    letter-spacing: 0px;
 }
 .services h2{
     margin-bottom: 5rem;
@@ -178,6 +221,7 @@ span{
     text-align: 2rem;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
+    /* height: 350px; */
 }
 .services-box i{
     font-size: 7rem;
@@ -187,8 +231,11 @@ span{
     font-size: 2.6rem;
 }
 .services-box p{
-    font-size: 1.6rem;
-    margin: 1rem 0.3rem;
+    font-size: 1.4rem;
+    margin: 2rem 0.3rem;
+    color: rgb(216, 208, 208);
+    text-align: justify;
+    height: 100px;
 }
 .services-container .services-box:hover{
     border-color: var(--main-color);
