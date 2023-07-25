@@ -74,7 +74,20 @@ section{
     align-items: center;
 }
 .home-img img{
-    width: 35vw;
+    width: 30vw;
+    aspect-ratio: .9999;
+    object-fit: contain;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    transition: 5s ease;
+
+}
+.home-img img:hover{
+    background: var(--bg-color);
+    color: var(--main-color);
 }
 .home-content h3{
     font-size: 3.2rem;
@@ -143,6 +156,14 @@ span{
 }
 .about-img img{
     width: 34vw;
+    aspect-ratio: 1.0;
+    object-fit: contain;
+    border: 5px solid var(--main-color);
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    transition: 5s ease;
 }
 .heading{
     text-align: center;
